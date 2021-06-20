@@ -3,10 +3,10 @@ const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
 class ProductTag extends Model {}
-
+//Product Tag Model
 ProductTag.init(
   {
-    ProductTag: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
